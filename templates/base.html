@@ -1,0 +1,34 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% block title %}My Django Site{% endblock %}</title>
+
+  <!-- Example stylesheet in static/css/style.css -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <header style="padding:12px 20px; border-bottom:1px solid #eee;">
+    <nav style="display:flex; gap:12px; align-items:center;">
+      <a href="{% url 'home' %}" style="font-weight:600; text-decoration:none;">Home</a>
+      <a href="#" style="color:gray; text-decoration:none;">About</a>
+    </nav>
+  </header>
+
+  <main style="max-width:900px; margin:28px auto; padding:0 16px;">
+    {% block content %}
+    <!-- page-specific content goes here -->
+    {% endblock %}
+  </main>
+
+  <footer style="text-align:center; color:#666; padding:20px 0; border-top:1px solid #eee;">
+    &copy; {{ now|date:"Y" }} — Your Project
+  </footer>
+
+  {% block scripts %}{% endblock %}
+</body>
+</html>
