@@ -1,0 +1,52 @@
+/* General page setup */
+body {
+  font-family: Inter, Arial, sans-serif;
+  background: #f9fafb;
+  color: #111;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header & nav */
+header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 12px 20px;
+}
+
+nav a {
+  margin-right: 16px;
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #2563eb;
+}
+
+/* Main content */
+main {
+  max-width: 900px;
+  margin: 28px auto;
+  padding: 0 16px;
+}
+
+/* Footer */
+footer {
+  background: #f3f4f6;
+  color: #6b7280;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+h1, h2, h3 {
+  color: #111827;
+}
+
+p {
+  margin-bottom: 1em;
+}
